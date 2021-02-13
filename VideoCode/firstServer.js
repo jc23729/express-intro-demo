@@ -1,3 +1,4 @@
+// this looks for a package called express
 const express = require('express');
 
 const app = express();
