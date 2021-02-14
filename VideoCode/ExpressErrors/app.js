@@ -34,7 +34,7 @@ app.get("/secret", (req, res, next) => {
   }
 
 })
-
+// shows how to save to database
 app.get('/savetodb', (req, res, next) => {
   try {
     attemptToSaveToDB()
