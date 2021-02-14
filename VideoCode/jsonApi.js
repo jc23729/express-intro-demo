@@ -14,6 +14,7 @@ app.get('/candies', (req, res) => {
   res.json(CANDIES);
 })
 //allow user to make new candies as post request
+// res.status(you can change the status code here)
 app.post('/candies', (req, res) => {
   if (req.body.name.toLowerCase() === "circus peanuts") {
     res.status(403).json({ msg: "HORRIBLE CHOICE.  CIRCUS PEANUTS FORBIDDEN!" })
