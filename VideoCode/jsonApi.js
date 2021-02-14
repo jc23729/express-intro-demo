@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-
+// this will format everything as json
 app.use(express.json());
 
 
