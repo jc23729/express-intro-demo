@@ -2,6 +2,10 @@ const express = require('express');
 
 const app = express();
 
+app.get('/', function(req, res){
+  res.send('Homepage')
+})
+
 app.get('/dogs', function(request, response) {
   return response.send('Dogs go brk brk');
 });
