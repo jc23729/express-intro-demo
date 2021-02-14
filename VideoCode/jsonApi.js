@@ -1,10 +1,10 @@
 const express = require('express');
 
 const app = express();
-// this will format everything as json
+// this will format everything as json data not form data
 app.use(express.json());
 
-
+//candies array acting as our database
 const CANDIES = [
   { name: 'snickers', qty: 43, price: 1.50 },
   { name: 'skittles', qty: 26, price: 0.99 }
