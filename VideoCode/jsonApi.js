@@ -13,7 +13,7 @@ const CANDIES = [
 app.get('/candies', (req, res) => {
   res.json(CANDIES);
 })
-
+//allow user to make new candies as post request
 app.post('/candies', (req, res) => {
   if (req.body.name.toLowerCase() === "circus peanuts") {
     res.status(403).json({ msg: "HORRIBLE CHOICE.  CIRCUS PEANUTS FORBIDDEN!" })
