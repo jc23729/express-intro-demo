@@ -9,7 +9,7 @@ const CANDIES = [
   { name: 'snickers', qty: 43, price: 1.50 },
   { name: 'skittles', qty: 26, price: 0.99 }
 ]
-
+// send a request to /candies as a get request
 app.get('/candies', (req, res) => {
   res.json(CANDIES);
 })
