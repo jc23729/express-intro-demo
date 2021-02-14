@@ -16,6 +16,7 @@ app.get('/candies', (req, res) => {
 //allow user to make new candies as post request
 // res.status(you can change the status code here)
 app.post('/candies', (req, res) => {
+  //check to see if body name is === to circus peanuts showms message key "HORRIBLE CHOICE"
   if (req.body.name.toLowerCase() === "circus peanuts") {
     res.status(403).json({ msg: "HORRIBLE CHOICE.  CIRCUS PEANUTS FORBIDDEN!" })
   }
